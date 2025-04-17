@@ -53,18 +53,3 @@ select * from order_items ;
 select * from orders;
 select * from admin;
 
-SET FOREIGN_KEY_CHECKS = 0;
-TRUNCATE TABLE cart;
-TRUNCATE TABLE orders;
-TRUNCATE TABLE order_items;
-TRUNCATE TABLE customers;
-TRUNCATE TABLE products;
-TRUNCATE TABLE admin;
-SET FOREIGN_KEY_CHECKS = 1;
-
-ALTER TABLE customers AUTO_INCREMENT = 1;
-ALTER TABLE products AUTO_INCREMENT = 1;
-ALTER TABLE cart AUTO_INCREMENT = 1;
-ALTER TABLE order_items AUTO_INCREMENT = 1;
-ALTER TABLE orders AUTO_INCREMENT = 1;
-ALTER TABLE admin AUTO_INCREMENT = 1;
